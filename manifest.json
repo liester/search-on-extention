@@ -1,16 +1,32 @@
 {
   "manifest_version": 2,
-  "name": "My Cool Extension",
-  "version": "0.1",
+  "name": "Proxibid Search",
+  "version": "1.0",
   "content_scripts": [
     {
       "matches": [
         "<all_urls>"
       ],
-      "js": ["jquery-3.4.1.min.js", "content.js"]
+      "js": [
+        "content.js"
+      ]
     }
   ],
   "browser_action": {
-    "default_icon": "icon.png"
+    "default_icon": "pbsearchicon.png"
+  },
+  "background": {
+    "scripts": [
+      "eventPage.js"
+    ],
+    "persistence": false
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "pbsearchicon.png",
+    "48": "pbsearchicon.png",
+    "128": "pbsearchicon.png"
   }
 }
