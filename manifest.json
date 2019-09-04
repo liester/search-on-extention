@@ -14,7 +14,7 @@
   ],
   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
   "browser_action": {
-    "default_icon": "pbsearchicon.png",
+    "default_icon": "proxibid-16x16.png",
     "default_popup": "popup.html"
   },
   "background": {
@@ -25,11 +25,12 @@
     "persistence": false
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "activeTab"
   ],
   "icons": {
-    "16": "pbsearchicon.png",
-    "48": "pbsearchicon.png",
-    "128": "pbsearchicon.png"
+    "16": "proxibid-16x16.png",
+    "48": "proxibid-48x48.png",
+    "128": "proxibid-128x128.png"
   }
 }
