@@ -6,7 +6,7 @@ const trackEvent = (category, action, label) => {
         // API Version.
         v: '1',
         // Tracking ID / Property ID.
-        tid: "UA-291821-1",
+        tid: "UA-000000-00", //Use real ID provided by Google Analytics
         // Anonymous Client Identifier. Ideally, this should be a UUID that
         // is associated with particular user, device, or browser instance.
         cid: '1',
